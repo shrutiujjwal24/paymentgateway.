@@ -1,0 +1,266 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+.tagline-cover::before{
+    content: "";
+    background: url("backgroundimg.jpg") no-repeat center center/cover; 
+    height: 100vh; 
+    width: 100%;
+    z-index: -2;
+    position: fixed; 
+}
+
+
+/* NAVBAR  */ 
+#navbar{
+    display: flex;  
+    flex-wrap: wrap;
+    position: fixed; 
+    top:0; 
+    background-color:#f8b864;
+    width: 100%;
+    margin-top: 0%;
+}  
+
+#navbar #logo a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    margin: 2rem;
+} div#logo {
+    padding: 1rem;
+} 
+
+ /* NAVBAR UL AND ITEAM */
+ #navmiddle{
+    margin-left: 10rem;
+} 
+#navmiddle ul{    
+    display: flex;
+} 
+
+#navbar li {
+    margin: 1rem;
+    list-style: none;
+}
+div#logo {
+    padding: 1rem;
+}
+ #navmiddle a{
+   color:white;
+   text-decoration: none;
+   font-size: 1.8rem; 
+ } 
+ #navmiddle a:hover{
+   color: black;
+    text-decoration: underline;
+ } 
+  #social-contact {
+    margin-top: -3.5rem;
+    margin-left: 75rem;
+} 
+.icon{
+    margin:1rem;
+    padding:0.1rem;
+    color:white;
+    padding: -6.9rem;
+    font-size: 1.9rem;
+    
+}
+
+ /* tagline */
+ .tagline{
+   display: flex;
+   flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    color: aliceblue;
+    height: 100vh;
+    animation: pop 1.5s ease  1 ;
+    padding-top: 7rem;
+    
+
+} 
+ @keyframes pop{
+    0%{
+        padding-top: 0rem;
+    }
+    100%{
+        padding-top: 7rem;
+    }
+} 
+
+
+.tagline h1{
+    font-size: 3rem;
+    margin: 2rem;
+    
+    padding: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+
+}
+.btn{
+
+    border: 2px solid black;
+    background-color: #f8b864;
+    border-radius: 20px;
+    margin: 2.3rem;
+    margin-left: 0%;
+    padding: 1rem;
+    width: 13rem;
+    font-size: 1.4rem;
+ } 
+ .btn:hover{
+     background-color: black; 
+     color:white ; 
+     border: 2px solid #f8b864; 
+     cursor: pointer;
+ }  
+
+ /* container section */  
+ 
+ h3{
+    padding: 1rem;
+    background-color: aliceblue;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-size: 1.6rem;
+    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(194, 144, 161);
+    width: 100%;   
+}
+.container img{   
+    height: 30rem;
+    width: 30rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    border-radius: 75rem;   
+}
+div#contain {
+    font-size: 2rem;
+    padding: 2rem;
+    margin: 3rem;
+}
+div #contain li{
+    margin: 2rem;
+}
+
+/* footer */
+
+footer{
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    width: 100%;
+    
+}
+
+ /* about */
+ #about-cover {
+    background: url("aboutcoverimg.jpg") no-repeat center center/cover;
+}
+ .about-contain{ 
+    margin: 19rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding: 4rem;
+    border: 0.2rem solid black;
+    background-color: white;
+    box-shadow: 7px 6px 10px grey;
+    font-size: 1.5rem;
+    width: 56rem;
+    text-align: center;
+}
+.about-contain h1{ 
+
+    margin: 3rem;
+    margin-top: 0rem;
+    color: #f8b864;
+}
+#about-img{
+        display: inline-block;
+        width: 7rem;
+        margin:auto;
+        margin-bottom: 0rem;
+        
+}
+/* donate */ 
+#donate-cover{
+    background: url("donatecover.jpg") no-repeat center center /cover;
+    
+    width:100%;
+    
+}
+.donate-tagline{
+    padding: 12rem;
+    padding-bottom: 15rem;
+    text-align: center;
+    color: aliceblue;
+}
+.donate-tagline h4{
+    margin: 3rem;
+    font-size: 3rem;
+}
+
+
+ @media screen and (max-width: 500px) {  
+    #navbar{
+        justify-content: center;
+        align-items: center;
+    }
+    #navmiddle{
+        margin-left: 0rem;
+    } 
+    div#logo {
+        display: inline-block;
+        margin: auto;
+        padding: 0rem;
+    }
+    #navbar #logo a{
+        
+        margin: auto;}
+    .container{
+        flex-direction: column;
+    }
+    .tagline{ 
+
+        padding-top: 4rem;
+        text-align: center;
+    }
+    .btn{
+        margin: 2.3rem;
+    }
+   .container img{
+        height: 15rem;
+        width: 15rem;
+   }
+   .about-contain{
+       width: fit-content;
+       margin: auto;
+   }
+   #social-contact {
+    margin-top: 0rem;
+    margin-left: 0rem;
+   } 
+   #about-img{
+    margin-top: 10rem;
+   }
+   .donate-tagline{
+       padding: 0rem;
+       padding-top:19rem;
+       padding-bottom: 7rem;
+   }
+   }
